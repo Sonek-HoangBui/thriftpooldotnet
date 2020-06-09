@@ -1,0 +1,5 @@
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netcoreapp3.1/ThriftPoolDotNet.csprojAssemblyReference.cache
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netcoreapp3.1/ThriftPoolDotNet.AssemblyInfoInputs.cache
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netcoreapp3.1/ThriftPoolDotNet.AssemblyInfo.cs
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netcoreapp3.1/ThriftPoolDotNet.csproj.CoreCompileInputs.cache
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netcoreapp3.1/ThriftPoolDotNet.MvcApplicationPartsAssemblyInfo.cache

@@ -1,0 +1,4 @@
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netstandard2.0/ThriftPoolDotNet.csprojAssemblyReference.cache
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netstandard2.0/ThriftPoolDotNet.AssemblyInfoInputs.cache
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netstandard2.0/ThriftPoolDotNet.AssemblyInfo.cs
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netstandard2.0/ThriftPoolDotNet.csproj.CoreCompileInputs.cache

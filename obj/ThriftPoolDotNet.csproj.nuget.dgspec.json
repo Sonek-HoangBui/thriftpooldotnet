@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/minhduc/net-core/ThriftPoolDotNet/ThriftPoolDotNet.csproj": {}
+  },
+  "projects": {
+    "/home/minhduc/net-core/ThriftPoolDotNet/ThriftPoolDotNet.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/minhduc/net-core/ThriftPoolDotNet/ThriftPoolDotNet.csproj",
+        "projectName": "ThriftPoolDotNet",
+        "projectPath": "/home/minhduc/net-core/ThriftPoolDotNet/ThriftPoolDotNet.csproj",
+        "packagesPath": "/home/minhduc/.nuget/packages/",
+        "outputPath": "/home/minhduc/net-core/ThriftPoolDotNet/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/minhduc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "ApacheThrift": {
+              "target": "Package",
+              "version": "[0.13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

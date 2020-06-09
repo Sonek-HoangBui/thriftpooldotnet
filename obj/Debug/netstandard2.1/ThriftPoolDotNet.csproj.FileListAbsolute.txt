@@ -1,0 +1,9 @@
+/home/minhduc/net-core/ThriftPoolDotNet/bin/Debug/netstandard2.1/ThriftPoolDotNet.deps.json
+/home/minhduc/net-core/ThriftPoolDotNet/bin/Debug/netstandard2.1/ThriftPoolDotNet.dll
+/home/minhduc/net-core/ThriftPoolDotNet/bin/Debug/netstandard2.1/ThriftPoolDotNet.pdb
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netstandard2.1/ThriftPoolDotNet.csprojAssemblyReference.cache
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netstandard2.1/ThriftPoolDotNet.AssemblyInfoInputs.cache
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netstandard2.1/ThriftPoolDotNet.AssemblyInfo.cs
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netstandard2.1/ThriftPoolDotNet.csproj.CoreCompileInputs.cache
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netstandard2.1/ThriftPoolDotNet.dll
+/home/minhduc/net-core/ThriftPoolDotNet/obj/Debug/netstandard2.1/ThriftPoolDotNet.pdb
