@@ -1,5 +1,7 @@
 using System;
 using System.Net;
+using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 
 using Thrift.Protocol;
@@ -21,7 +23,7 @@ namespace ThriftPoolDotNet
         public string m_host;
         public int m_port;
         private long m_createTime = System.DateTime.Now.Millisecond;
-        
+        static readonly object syncLock = new object();
         public TClientInfo() {
         }
 
@@ -30,7 +32,7 @@ namespace ThriftPoolDotNet
         // }
 
         public TClientInfo(String host, int port, Object clientClass, Object protocolClass) {
-            this.m_host = host;
+            this.m_host = new String(host) ;
             this.m_port = port;
             this.m_clientClass = clientClass;
             this.m_protocolClass = protocolClass;
@@ -53,19 +55,27 @@ namespace ThriftPoolDotNet
         }
 
         public bool doOpen() {
-            try {
-                IPAddress ip = IPAddress.Parse(this.m_host);
-                this.m_transport = new TFramedTransport(new TSocketTransport(ip, this.m_port));
-                this.m_protocol = this.createProtocol(this.m_transport);
-               //var aClass = this.m_clientClass;
-               // TStringBigSetKVService.Client client = new TStringBigSetKVService.Client(this.m_protocol);
-               this.m_client = Activator.CreateInstance((Type)this.m_clientClass, this.m_protocol);
-               this.m_transport.OpenAsync();
-            } catch (Exception var5) {
-                return false;
-            }
+            lock (syncLock)
+            {
+                try {
+                    Console.WriteLine("m_host " + m_host.ToString());
+                    IPAddress ip = IPAddress.Parse(this.m_host);
+                    this.m_transport = new TFramedTransport(new TSocketTransport(ip, this.m_port));
+                    this.m_protocol = this.createProtocol(this.m_transport);
+                    //var aClass = this.m_clientClass;
+                    // TStringBigSetKVService.Client client = new TStringBigSetKVService.Client(this.m_protocol);
+                    this.m_client = Activator.CreateInstance((Type)this.m_clientClass, this.m_protocol);
+                    Task ts  = this.m_transport.OpenAsync();
+                    Console.WriteLine("ts "+ ts.IsCompleted);
+                } catch (Exception var5) {
+                    Console.WriteLine("doOpen error "+var5.ToString());
+                    return false;
+                }
 
-            return this.m_transport.IsOpen;
+                Console.WriteLine("this.m_trasnport "+ this.m_transport.ToString());
+                return this.m_transport.IsOpen;
+            }
+            
         }
 
         public bool isOpen() {
@@ -81,6 +91,7 @@ namespace ThriftPoolDotNet
                     this.m_protocol = null;
                     this.m_client = null;
                 } catch (Exception var2) {
+                    Console.WriteLine("close() error " + var2.ToString());
                 }
 
             } else {
@@ -101,8 +112,11 @@ namespace ThriftPoolDotNet
 
         public void cleanUp() {
             if (System.DateTime.Now.Millisecond - this.m_createTime < 600000L) {
+                //Console.WriteLine("I3");
                 ClientFactory.releaseClient(this);
             } else {
+                //Console.WriteLine("I4");
+
                 this.close();
             }
 
