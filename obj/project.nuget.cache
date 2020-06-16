@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "erBKRYkWV0f5PVbFAoiXXdtek4p0UFbGriJP1UafG5quQl60WCNm6NQP3biw8Tu6aIeU4UPQrFICp31A5/pdzA==",
+  "dgSpecHash": "ieJg+nSXqO115IWga6P/Iuu8rxWp6S0Jp3wByyeGV7CLjuckChQq7VeSTSnv+4w9MRdDfO9suSwRgJABb8mASQ==",
   "success": true,
-  "projectFilePath": "/home/minhduc/net-core/ThriftPoolDotNet/ThriftPoolDotNet.csproj",
+  "projectFilePath": "/home/minhduc/net-core/thriftpooldotnet/ThriftPoolDotNet.csproj",
   "expectedPackageFiles": [
     "/home/minhduc/.nuget/packages/apachethrift/0.13.0.1/apachethrift.0.13.0.1.nupkg.sha512",
     "/home/minhduc/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",

@@ -5,20 +5,20 @@ using Thrift;
 using Thrift.Protocol;
 namespace ThriftPoolDotNet
 {
-    public class BigSetClient
+    public class SetClient
     {
         public bool isCompactProtocol = false; // default is binary protocol
         private String m_host;
         private int m_port;
     
-        public BigSetClient(String host, int port, bool isCompact)
+        public SetClient(String host, int port, bool isCompact)
         {
             m_host = host;
             m_port = port;
             isCompactProtocol = isCompact;
         }
     
-        public BigSetClient(String host, int port)
+        public SetClient(String host, int port)
         {
             this.m_host = host;
             this.m_port = port;

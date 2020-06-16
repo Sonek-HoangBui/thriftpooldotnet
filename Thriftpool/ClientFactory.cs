@@ -57,7 +57,7 @@ namespace ThriftPoolDotNet
                     aResult = null;
                 } else {
                     aResult = aContainer.Pop();
-                    Console.WriteLine("ngon ");
+                    //Console.WriteLine("ngon ");
                 }
                 return aResult;
             }

@@ -66,7 +66,7 @@ namespace ThriftPoolDotNet
                     // TStringBigSetKVService.Client client = new TStringBigSetKVService.Client(this.m_protocol);
                     this.m_client = Activator.CreateInstance((Type)this.m_clientClass, this.m_protocol);
                     Task ts  = this.m_transport.OpenAsync();
-                    Console.WriteLine("ts "+ ts.IsCompleted);
+                    //Console.WriteLine("ts "+ ts.IsCompleted);
                 } catch (Exception var5) {
                     Console.WriteLine("doOpen error "+var5.ToString());
                     return false;

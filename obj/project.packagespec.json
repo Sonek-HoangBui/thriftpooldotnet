@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/minhduc/net-core/ThriftPoolDotNet/ThriftPoolDotNet.csproj",
+    "projectUniqueName": "/home/minhduc/net-core/thriftpooldotnet/ThriftPoolDotNet.csproj",
     "projectName": "ThriftPoolDotNet",
-    "projectPath": "/home/minhduc/net-core/ThriftPoolDotNet/ThriftPoolDotNet.csproj",
-    "outputPath": "/home/minhduc/net-core/ThriftPoolDotNet/obj/",
+    "projectPath": "/home/minhduc/net-core/thriftpooldotnet/ThriftPoolDotNet.csproj",
+    "outputPath": "/home/minhduc/net-core/thriftpooldotnet/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netstandard2.1"

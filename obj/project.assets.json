@@ -4554,11 +4554,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/minhduc/net-core/ThriftPoolDotNet/ThriftPoolDotNet.csproj",
+      "projectUniqueName": "/home/minhduc/net-core/thriftpooldotnet/ThriftPoolDotNet.csproj",
       "projectName": "ThriftPoolDotNet",
-      "projectPath": "/home/minhduc/net-core/ThriftPoolDotNet/ThriftPoolDotNet.csproj",
+      "projectPath": "/home/minhduc/net-core/thriftpooldotnet/ThriftPoolDotNet.csproj",
       "packagesPath": "/home/minhduc/.nuget/packages/",
-      "outputPath": "/home/minhduc/net-core/ThriftPoolDotNet/obj/",
+      "outputPath": "/home/minhduc/net-core/thriftpooldotnet/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/minhduc/.nuget/NuGet/NuGet.Config"
